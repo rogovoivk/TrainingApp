@@ -104,6 +104,10 @@ class LogInViewController: UIViewController {
     
     @objc func pressedButton() {
         print("pressed button GO")
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuBoardID") as! MenuViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuTabBarID")
+        vc!.modalPresentationStyle = .fullScreen
+        self.present(vc!, animated: true, completion: nil)
     }
     
 

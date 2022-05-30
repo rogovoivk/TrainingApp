@@ -17,14 +17,13 @@ class RegistrationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Регистрация"
-//        view.backgroundColor = .yellow
+        
+        let screenContentHeigh = 700
         
         let scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
-//        scrollView.translatesAutoresizingMaskIntoConstraints = false
-//        scrollView.backgroundColor = .green
         view.addSubview(scrollView)
         
-        let myView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 600))
+        let myView = UIView(frame: CGRect(x: 0, y: 0, width: Int(view.frame.size.width), height: screenContentHeigh))
         
         scrollView.addSubview(myView)
         
@@ -64,15 +63,15 @@ class RegistrationViewController: UIViewController {
 
 
 //        scrollView.addSubview(testTextField)
-        scrollView.addSubview(loginTextField)
-        scrollView.addSubview(nikenameTextField)
-        scrollView.addSubview(passwordTextField)
-        scrollView.addSubview(secondPasswordTextField)
-        scrollView.addSubview(genderTextView)
-        scrollView.addSubview(genderSC)
-        scrollView.addSubview(goButton)
-        scrollView.addSubview(myLabel)
-        scrollView.addSubview(logoBottom)
+        myView.addSubview(loginTextField)
+        myView.addSubview(nikenameTextField)
+        myView.addSubview(passwordTextField)
+        myView.addSubview(secondPasswordTextField)
+        myView.addSubview(genderTextView)
+        myView.addSubview(genderSC)
+        myView.addSubview(goButton)
+        myView.addSubview(myLabel)
+        myView.addSubview(logoBottom)
         
 //        testTextField.topAnchor.constraint(equalTo: myView.topAnchor, constant: 800).isActive = true
 //        testTextField.leadingAnchor.constraint(equalTo: myView.leadingAnchor, constant: 10).isActive = true
@@ -113,7 +112,7 @@ class RegistrationViewController: UIViewController {
         logoBottom.trailingAnchor.constraint(equalTo: myView.trailingAnchor, constant: -144).isActive = true
 //        logoBottom.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -66).isActive = true
         
-        scrollView.contentSize = CGSize(width: view.frame.size.width, height: 600)
+        scrollView.contentSize = CGSize(width: Int(view.frame.size.width), height: screenContentHeigh)
     }
     
     
