@@ -132,8 +132,6 @@ class ViewController: UIViewController {
         myButton.setTitleColor(.white, for: .normal)
         myButton.backgroundColor =
         UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
-        //        let myButton =  UIButton(frame: CGRect(x: 0, y: 0, width: 343, height: 50))
-//        myButton.frame = CGRect(x: 200, y: 200, width: 311, height: 50)
         myButton.addTarget(self, action: #selector(pressedButton), for: .touchUpInside)
         myButton.translatesAutoresizingMaskIntoConstraints = false
         myButton.layer.cornerRadius = 10

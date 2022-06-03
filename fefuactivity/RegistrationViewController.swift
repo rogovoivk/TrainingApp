@@ -59,10 +59,6 @@ class RegistrationViewController: UIViewController {
         testTextField.backgroundColor = .red
         
         
-        
-
-
-//        scrollView.addSubview(testTextField)
         myView.addSubview(loginTextField)
         myView.addSubview(nikenameTextField)
         myView.addSubview(passwordTextField)
@@ -73,10 +69,6 @@ class RegistrationViewController: UIViewController {
         myView.addSubview(myLabel)
         myView.addSubview(logoBottom)
         
-//        testTextField.topAnchor.constraint(equalTo: myView.topAnchor, constant: 800).isActive = true
-//        testTextField.leadingAnchor.constraint(equalTo: myView.leadingAnchor, constant: 10).isActive = true
-//
-//
         loginTextField.topAnchor.constraint(equalTo: myView.topAnchor, constant: 16).isActive = true
         loginTextField.leadingAnchor.constraint(equalTo: myView.leadingAnchor, constant: 16).isActive = true
         loginTextField.trailingAnchor.constraint(equalTo: myView.trailingAnchor, constant: -16).isActive = true
@@ -110,7 +102,6 @@ class RegistrationViewController: UIViewController {
         logoBottom.topAnchor.constraint(equalTo: myLabel.layoutMarginsGuide.bottomAnchor, constant: 48).isActive = true
         logoBottom.leadingAnchor.constraint(equalTo: myView.leadingAnchor, constant: 144).isActive = true
         logoBottom.trailingAnchor.constraint(equalTo: myView.trailingAnchor, constant: -144).isActive = true
-//        logoBottom.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -66).isActive = true
         
         scrollView.contentSize = CGSize(width: Int(view.frame.size.width), height: screenContentHeigh)
     }
@@ -134,20 +125,11 @@ class RegistrationViewController: UIViewController {
     func genSC() -> UISegmentedControl{
         let genderItems = ["man", "women"]
         let genderSC = UISegmentedControl(items : genderItems)
-//        genderSC.center = CGPoint.init(x: 200, y: 500)
-        //        print(genderTextView.)
-//        genderSC.frame = CGRect(x: 10, y: 10, width: 80, height: 22)
-//        genderSC.center = CGPoint.init(x: 100, y: 100)
         genderSC.selectedSegmentIndex = 0
-//        genderSC.addTarget(self, action: #selector(ViewController.indexChanged(_:)), for: .valueChanged)
-
         genderSC.layer.cornerRadius = 5.0
         genderSC.backgroundColor = UIColor(red: 0.471, green: 0.471, blue: 0.502, alpha: 0.16)
         genderSC.tintColor = UIColor.yellow
         genderSC.translatesAutoresizingMaskIntoConstraints = false
-
-//        genderSC.isUserInteractionEnabled = false
-//        genderSC.addTarget(self, action: #selector(changeGender( :)), for: .valueChanged)
         return genderSC
     }
     
@@ -157,8 +139,6 @@ class RegistrationViewController: UIViewController {
         myButton.setTitleColor(.white, for: .normal)
         myButton.backgroundColor =
         UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
-        //        let myButton =  UIButton(frame: CGRect(x: 0, y: 0, width: 343, height: 50))
-//        myButton.frame = CGRect(x: 200, y: 200, width: 311, height: 50)
         myButton.addTarget(self, action: #selector(pressedButton), for: .touchUpInside)
         myButton.translatesAutoresizingMaskIntoConstraints = false
         myButton.layer.cornerRadius = 10
@@ -167,31 +147,9 @@ class RegistrationViewController: UIViewController {
     
     @objc func pressedButton() {
         print("pressed button GO")
+        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuTabBarID")
+        vc!.modalPresentationStyle = .fullScreen
+        self.present(vc!, animated: true, completion: nil)
     }
-    
-//    @objc func changeGender(sender: UISegmentedControl) {
-//          print("Changing gender to ")
-//          switch sender.selectedSegmentIndex {
-//          case 1:
-//              print("Man")
-//          default:
-//              print("Woman")
-//          }
-//      }
-
-    
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

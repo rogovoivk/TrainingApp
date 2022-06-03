@@ -7,8 +7,6 @@ class CustomTableViewCell: UITableViewCell {
     public let firstLabel: UILabel = {
         let myLabel = UILabel()
         myLabel.text = "item of some time"
-//        myLabel.font = UIFont(name: myLabel.font.fontName, size: 35)
-//        myLabel.font = myLabel.font.withSize(22)
         myLabel.font = UIFont.boldSystemFont(ofSize: 22)
         return myLabel
     }()
@@ -40,7 +38,6 @@ class CustomTableViewCell: UITableViewCell {
         let myButton = UIButton()
         myButton.backgroundColor = .white
         myButton.layer.cornerRadius = 10
-//        myButton.addTarget(self, action: #selector(pressedButton), for: .touchUpInside)
         return myButton
     }()
     

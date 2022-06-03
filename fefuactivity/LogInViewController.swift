@@ -18,8 +18,7 @@ class LogInViewController: UIViewController {
         title = "Войти"
         
         let scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
-//        scrollView.translatesAutoresizingMaskIntoConstraints = false
-//        scrollView.backgroundColor = .green
+
         view.addSubview(scrollView)
         
         let myView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 600))
@@ -66,8 +65,6 @@ class LogInViewController: UIViewController {
         logoBottom.topAnchor.constraint(equalTo: colorBurnLogo.bottomAnchor, constant: 23).isActive = true
         print(myView.center.x)
         print(logoBottom.center.x)
-
-//        logoBottom.bottomAnchor.constraint(equalTo: myView.bottomAnchor, constant: -66).isActive = true
         
         scrollView.contentSize = CGSize(width: view.frame.size.width, height: 600)
 
@@ -94,8 +91,6 @@ class LogInViewController: UIViewController {
         myButton.setTitleColor(.white, for: .normal)
         myButton.backgroundColor =
         UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
-        //        let myButton =  UIButton(frame: CGRect(x: 0, y: 0, width: 343, height: 50))
-//        myButton.frame = CGRect(x: 200, y: 200, width: 311, height: 50)
         myButton.addTarget(self, action: #selector(pressedButton), for: .touchUpInside)
         myButton.translatesAutoresizingMaskIntoConstraints = false
         myButton.layer.cornerRadius = 10
@@ -104,21 +99,10 @@ class LogInViewController: UIViewController {
     
     @objc func pressedButton() {
         print("pressed button GO")
-//        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuBoardID") as! MenuViewController
         let vc = storyboard?.instantiateViewController(withIdentifier: "MenuTabBarID")
         vc!.modalPresentationStyle = .fullScreen
         self.present(vc!, animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

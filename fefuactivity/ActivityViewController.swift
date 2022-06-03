@@ -86,7 +86,6 @@ extension ActivityViewController: UITableViewDataSource, UITableViewDelegate{
         cell.myButton.accessibilityIdentifier = itemsTV[indexPath.section][indexPath.row]
         cell.myButton.addTarget(self, action: #selector(pressedButton), for: .touchUpInside)
         cell.firstLabel.text = itemsTV[indexPath.section][indexPath.row]
-//        cell.textLabel?.text = "hellow fucking world"
         return cell
     }
 
