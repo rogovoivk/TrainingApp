@@ -14,7 +14,8 @@ class ActivityViewController: UIViewController {
     var itemsTV = [[String]]()
     var firstPropertyForShowActivity: Int = 1000
     
-//    var characters = ["Link", "Zelda", "Ganondorf", "Midna"]
+    @IBOutlet weak var startButton: UIButton!
+    //    var characters = ["Link", "Zelda", "Ganondorf", "Midna"]
     @IBOutlet weak var empyLabel: UILabel!
     var wasFirstTraining = false
     @IBOutlet weak var myTV: UITableView!
@@ -22,22 +23,15 @@ class ActivityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-//        let startButton = genButton()
-//        myTV.addSubview(startButton)
-//        startButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 16).isActive = true
+        startButton.layer.cornerRadius = 10
         
         myTV.register(CustomTableViewCell.self, forCellReuseIdentifier: CustomTableViewCell.identifier)
         myTV.dataSource = self
         myTV.delegate = self
-        
-//        myTV.addSubview(buttonView)
-//        buttonView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -150).isActive = true
-//        buttonView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive = true
-//        buttonView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0).isActive = true
+
         
     }
-    
-    @IBAction func PressedStartButton(_ sender: UIButton) {
+    @IBAction func PressedStartButton(_ sender: Any) {
         if wasFirstTraining == false {
             wasFirstTraining = true
             empyLabel.text = ""
@@ -54,6 +48,7 @@ class ActivityViewController: UIViewController {
         }
         
     }
+
 }
 
 extension ActivityViewController: UITableViewDataSource, UITableViewDelegate{

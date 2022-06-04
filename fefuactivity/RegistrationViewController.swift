@@ -149,8 +149,11 @@ class RegistrationViewController: UIViewController {
             myLabel.trailingAnchor.constraint(equalTo: myView.trailingAnchor, constant: -16),
 
             logoBottom.topAnchor.constraint(equalTo: myLabel.layoutMarginsGuide.bottomAnchor, constant: 48),
-            logoBottom.leadingAnchor.constraint(equalTo: myView.leadingAnchor, constant: 144),
-            logoBottom.trailingAnchor.constraint(equalTo: myView.trailingAnchor, constant: -144)
+//            logoBottom.leadingAnchor.constraint(equalTo: myView.leadingAnchor, constant: 144),
+//            logoBottom.trailingAnchor.constraint(equalTo: myView.trailingAnchor, constant: -144)
+            logoBottom.widthAnchor.constraint(equalToConstant: 87),
+            logoBottom.heightAnchor.constraint(equalToConstant: 56),
+            logoBottom.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0)
             
         ])
     }

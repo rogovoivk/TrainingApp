@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -161,29 +162,6 @@
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <view contentMode="scaleToFill" id="asB-kf-kwq">
-                                <rect key="frame" x="40" y="718" width="374" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6c-of-BK7">
-                                        <rect key="frame" x="0.0" y="0.0" width="73" height="36"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="PressedStartButton:" destination="hEZ-qK-e7o" eventType="touchUpInside" id="hbk-eF-Xow"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstItem="U6c-of-BK7" firstAttribute="top" secondItem="asB-kf-kwq" secondAttribute="top" id="9jB-XL-ObW"/>
-                                    <constraint firstItem="U6c-of-BK7" firstAttribute="leading" secondItem="asB-kf-kwq" secondAttribute="leading" id="Ba1-Bs-dcx"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" id="RiS-q8-bjh">
                                 <rect key="frame" x="9" y="426" width="397" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -209,22 +187,39 @@
                                     <constraint firstAttribute="trailing" secondItem="uUd-b0-vhG" secondAttribute="trailing" constant="79" id="d7w-6z-M21"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dM-lM-s34">
+                                <rect key="frame" x="51.5" y="713" width="311" height="50"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="17w-0n-wUX"/>
+                                    <constraint firstAttribute="height" constant="50" id="Zx3-fp-Dhh"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Старт">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="PressedStartButton:" destination="hEZ-qK-e7o" eventType="touchUpInside" id="cQ2-uf-K7N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1QV-jT-kQv"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="3dM-lM-s34" firstAttribute="bottom" secondItem="OdY-5b-tsA" secondAttribute="bottom" constant="-50" id="5rS-Dd-8Z8"/>
+                            <constraint firstItem="3dM-lM-s34" firstAttribute="centerX" secondItem="1QV-jT-kQv" secondAttribute="centerX" id="6OY-dq-Rsh"/>
                             <constraint firstItem="1QV-jT-kQv" firstAttribute="trailing" secondItem="OdY-5b-tsA" secondAttribute="trailing" id="TOp-r1-sT1"/>
                             <constraint firstItem="OdY-5b-tsA" firstAttribute="top" secondItem="1QV-jT-kQv" secondAttribute="top" id="ULk-wJ-n2f"/>
-                            <constraint firstItem="asB-kf-kwq" firstAttribute="bottom" secondItem="OdY-5b-tsA" secondAttribute="bottom" priority="750" id="Yz1-kX-VWA"/>
                             <constraint firstItem="OdY-5b-tsA" firstAttribute="leading" secondItem="1QV-jT-kQv" secondAttribute="leading" id="ZRX-B4-GrJ"/>
                             <constraint firstItem="OdY-5b-tsA" firstAttribute="bottom" secondItem="1QV-jT-kQv" secondAttribute="bottom" id="aA6-WP-K98"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Активности" id="Er0-ag-HPo"/>
                     <connections>
-                        <outlet property="buttonView" destination="asB-kf-kwq" id="BbX-UW-gAB"/>
                         <outlet property="empyLabel" destination="uUd-b0-vhG" id="B3P-op-40S"/>
                         <outlet property="myTV" destination="OdY-5b-tsA" id="eOy-vg-H38"/>
+                        <outlet property="startButton" destination="3dM-lM-s34" id="rgW-tC-51v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MHX-Ci-gWW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -317,13 +312,28 @@
             </objects>
             <point key="canvasLocation" x="6196" y="695"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="UHb-JE-NL6">
+            <objects>
+                <viewController storyboardIdentifier="TestStoryBoard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oOG-2w-Wd0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ALz-Ku-Kg1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kdD-HC-FVc"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fD-u4-ArN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8052" y="504"/>
+        </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -334,8 +344,8 @@
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -144,62 +144,6 @@ class ViewController: UIViewController {
         ])
     }
     
-    func genButtonReg() -> UIButton{
-        let myButton = UIButton(type: .system)
-        myButton.setTitle("Зарегистрироваться", for: .normal)
-        myButton.setTitleColor(.white, for: .normal)
-        myButton.backgroundColor =
-        UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
-        myButton.addTarget(self, action: #selector(PressRegistrationButton), for: .touchUpInside)
-        myButton.translatesAutoresizingMaskIntoConstraints = false
-        myButton.layer.cornerRadius = 10
-        return myButton
-    }
-    
-    func genButtonLogIn() -> UIButton{
-        let myButton = UIButton(type: .system)
-        myButton.setTitle("Уже есть аккаунт?", for: .normal)
-        myButton.setTitleColor(.white, for: .normal)
-        myButton.backgroundColor =
-        UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
-        myButton.addTarget(self, action: #selector(PressLogInButton), for: .touchUpInside)
-        myButton.translatesAutoresizingMaskIntoConstraints = false
-        myButton.layer.cornerRadius = 10
-        return myButton
-    }
-    
-    func genLabel() -> UILabel{
-        let myLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 343, height: 56))
-        myLabel.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-        myLabel.textAlignment = .center
-        myLabel.text = "Пожалуй лучший фитнес трекер в ДВФУ"
-        myLabel.font = UIFont(name: "SFProDisplay-Semibold", size: 22)
-        myLabel.numberOfLines = 0
-        myLabel.lineBreakMode = .byWordWrapping
-        myLabel.translatesAutoresizingMaskIntoConstraints = false
-        myLabel.font = UIFont.boldSystemFont(ofSize: 22)
-        myLabel.textAlignment = .center
-        
-        
-        return myLabel
-    }
-    
-    func genButton() -> UIButton{
-        let myButton = UIButton(type: .system)
-        myButton.setTitle("Продолжить", for: .normal)
-        myButton.setTitleColor(.white, for: .normal)
-        myButton.backgroundColor =
-        UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
-        myButton.addTarget(self, action: #selector(pressedButton), for: .touchUpInside)
-        myButton.translatesAutoresizingMaskIntoConstraints = false
-        myButton.layer.cornerRadius = 10
-        return myButton
-    }
-    
-    @objc func pressedButton() {
-        print("pressed button GO")
-    }
-    
     @objc func PressRegistrationButton() {
         print("press Register")
         let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterBoardID") as! RegistrationViewController
