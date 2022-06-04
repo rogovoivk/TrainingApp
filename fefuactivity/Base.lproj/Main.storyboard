@@ -157,10 +157,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OdY-5b-tsA">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <view contentMode="scaleToFill" id="asB-kf-kwq">
+                                <rect key="frame" x="40" y="718" width="374" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6c-of-BK7">
+                                        <rect key="frame" x="0.0" y="0.0" width="73" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="PressedStartButton:" destination="hEZ-qK-e7o" eventType="touchUpInside" id="hbk-eF-Xow"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="U6c-of-BK7" firstAttribute="top" secondItem="asB-kf-kwq" secondAttribute="top" id="9jB-XL-ObW"/>
+                                    <constraint firstItem="U6c-of-BK7" firstAttribute="leading" secondItem="asB-kf-kwq" secondAttribute="leading" id="Ba1-Bs-dcx"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" id="RiS-q8-bjh">
                                 <rect key="frame" x="9" y="426" width="397" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -186,45 +209,20 @@
                                     <constraint firstAttribute="trailing" secondItem="uUd-b0-vhG" secondAttribute="trailing" constant="79" id="d7w-6z-M21"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" id="asB-kf-kwq">
-                                <rect key="frame" x="20" y="638" width="374" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6c-of-BK7">
-                                        <rect key="frame" x="40" y="0.0" width="294" height="44"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="PressedStartButton:" destination="hEZ-qK-e7o" eventType="touchUpInside" id="hbk-eF-Xow"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="U6c-of-BK7" firstAttribute="leading" secondItem="asB-kf-kwq" secondAttribute="leading" constant="40" id="4sp-95-JiG"/>
-                                    <constraint firstItem="U6c-of-BK7" firstAttribute="leading" secondItem="asB-kf-kwq" secondAttribute="leading" constant="40" id="LZv-6l-VN4"/>
-                                    <constraint firstAttribute="bottom" secondItem="U6c-of-BK7" secondAttribute="bottom" id="j2S-zY-hcB"/>
-                                    <constraint firstItem="U6c-of-BK7" firstAttribute="top" secondItem="asB-kf-kwq" secondAttribute="top" id="lbq-Qq-aq4"/>
-                                    <constraint firstAttribute="trailing" secondItem="U6c-of-BK7" secondAttribute="trailing" constant="40" id="mNk-eW-IVN"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="U6c-of-BK7" secondAttribute="trailing" constant="20" symbolic="YES" id="xe8-Xf-uFw"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1QV-jT-kQv"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OdY-5b-tsA" firstAttribute="trailing" secondItem="1QV-jT-kQv" secondAttribute="trailing" id="VgV-T5-Yga"/>
-                            <constraint firstItem="OdY-5b-tsA" firstAttribute="leading" secondItem="1QV-jT-kQv" secondAttribute="leading" id="fW5-Wu-PzC"/>
-                            <constraint firstItem="OdY-5b-tsA" firstAttribute="top" secondItem="tti-DK-1Ym" secondAttribute="top" id="t7d-LN-G8k"/>
-                            <constraint firstItem="1QV-jT-kQv" firstAttribute="bottom" secondItem="OdY-5b-tsA" secondAttribute="bottom" id="uCb-FX-eEY"/>
+                            <constraint firstItem="1QV-jT-kQv" firstAttribute="trailing" secondItem="OdY-5b-tsA" secondAttribute="trailing" id="TOp-r1-sT1"/>
+                            <constraint firstItem="OdY-5b-tsA" firstAttribute="top" secondItem="1QV-jT-kQv" secondAttribute="top" id="ULk-wJ-n2f"/>
+                            <constraint firstItem="asB-kf-kwq" firstAttribute="bottom" secondItem="OdY-5b-tsA" secondAttribute="bottom" priority="750" id="Yz1-kX-VWA"/>
+                            <constraint firstItem="OdY-5b-tsA" firstAttribute="leading" secondItem="1QV-jT-kQv" secondAttribute="leading" id="ZRX-B4-GrJ"/>
+                            <constraint firstItem="OdY-5b-tsA" firstAttribute="bottom" secondItem="1QV-jT-kQv" secondAttribute="bottom" id="aA6-WP-K98"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Активности" id="Er0-ag-HPo"/>
                     <connections>
+                        <outlet property="buttonView" destination="asB-kf-kwq" id="BbX-UW-gAB"/>
                         <outlet property="empyLabel" destination="uUd-b0-vhG" id="B3P-op-40S"/>
                         <outlet property="myTV" destination="OdY-5b-tsA" id="eOy-vg-H38"/>
                     </connections>
@@ -335,6 +333,9 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

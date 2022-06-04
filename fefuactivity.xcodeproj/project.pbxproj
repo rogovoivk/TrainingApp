@@ -15,6 +15,7 @@
 		1DE4E5D1270A5CD0004A30CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE4E5CF270A5CD0004A30CA /* LaunchScreen.storyboard */; };
 		E6675FB7282600F0006B991E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6675FB6282600F0006B991E /* RegistrationViewController.swift */; };
 		E6679DA9283770E600B8FA34 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6679DA8283770E600B8FA34 /* LogInViewController.swift */; };
+		E678F7E2284A095A001A2AAB /* SignInView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E678F7E1284A095A001A2AAB /* SignInView.storyboard */; };
 		E67ABF512840B15A003AE784 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67ABF502840B15A003AE784 /* MenuViewController.swift */; };
 		E67ABF53284194A3003AE784 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67ABF52284194A3003AE784 /* ActivityViewController.swift */; };
 		E67ABF5728422AAE003AE784 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67ABF5628422AAE003AE784 /* CustomTableViewCell.swift */; };
@@ -32,6 +33,7 @@
 		1DE4E5D2270A5CD0004A30CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6675FB6282600F0006B991E /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		E6679DA8283770E600B8FA34 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		E678F7E1284A095A001A2AAB /* SignInView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInView.storyboard; sourceTree = "<group>"; };
 		E67ABF502840B15A003AE784 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		E67ABF52284194A3003AE784 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		E67ABF5628422AAE003AE784 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -68,7 +70,7 @@
 		1DE4E5C3270A5CCE004A30CA /* fefuactivity */ = {
 			isa = PBXGroup;
 			children = (
-				E6679DA8283770E600B8FA34 /* LogInViewController.swift */,
+				E678F7E0284A07D3001A2AAB /* SignInView */,
 				E67ABF502840B15A003AE784 /* MenuViewController.swift */,
 				1DE4E5C4270A5CCE004A30CA /* AppDelegate.swift */,
 				E6675FB6282600F0006B991E /* RegistrationViewController.swift */,
@@ -83,6 +85,15 @@
 				1DE4E5D2270A5CD0004A30CA /* Info.plist */,
 			);
 			path = fefuactivity;
+			sourceTree = "<group>";
+		};
+		E678F7E0284A07D3001A2AAB /* SignInView */ = {
+			isa = PBXGroup;
+			children = (
+				E6679DA8283770E600B8FA34 /* LogInViewController.swift */,
+				E678F7E1284A095A001A2AAB /* SignInView.storyboard */,
+			);
+			path = SignInView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 				1DE4E5D1270A5CD0004A30CA /* LaunchScreen.storyboard in Resources */,
 				1DE4E5CE270A5CD0004A30CA /* Assets.xcassets in Resources */,
 				1DE4E5CC270A5CCE004A30CA /* Main.storyboard in Resources */,
+				E678F7E2284A095A001A2AAB /* SignInView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

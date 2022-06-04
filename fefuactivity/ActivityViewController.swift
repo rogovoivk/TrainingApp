@@ -30,6 +30,11 @@ class ActivityViewController: UIViewController {
         myTV.dataSource = self
         myTV.delegate = self
         
+//        myTV.addSubview(buttonView)
+//        buttonView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -150).isActive = true
+//        buttonView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive = true
+//        buttonView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0).isActive = true
+        
     }
     
     @IBAction func PressedStartButton(_ sender: UIButton) {
