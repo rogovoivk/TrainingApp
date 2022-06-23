@@ -28,10 +28,13 @@ class ActivityViewController: UIViewController {
         myTV.register(CustomTableViewCell.self, forCellReuseIdentifier: CustomTableViewCell.identifier)
         myTV.dataSource = self
         myTV.delegate = self
-
-        
     }
+    
     @IBAction func PressedStartButton(_ sender: Any) {
+        if wasFirstTraining == true{
+            let controller = MapViewController()
+            navigationController?.pushViewController(controller, animated: true)
+        }
         if wasFirstTraining == false {
             wasFirstTraining = true
             empyLabel.text = ""

@@ -99,7 +99,7 @@ class LogInViewController: UIViewController {
             
 //            logoBottom.leadingAnchor.constraint(equalTo: myView.leadingAnchor, constant: 144),
 //            logoBottom.trailingAnchor.constraint(equalTo: myView.trailingAnchor, constant: -144),
-            logoBottom.topAnchor.constraint(equalTo: colorBurnLogo.bottomAnchor, constant: 23),
+            logoBottom.topAnchor.constraint(equalTo: colorBurnLogo.bottomAnchor, constant: 23),	
             logoBottom.widthAnchor.constraint(equalToConstant: 87),
             logoBottom.heightAnchor.constraint(equalToConstant: 56),
             logoBottom.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0)

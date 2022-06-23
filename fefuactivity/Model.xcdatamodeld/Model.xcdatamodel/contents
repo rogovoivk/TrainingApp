@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G415" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ShowActivity" representedClassName=".ShowActivity" syncable="YES" codeGenerationType="class">
+        <attribute name="itemDistance" attributeType="String" customClassName="."/>
+        <attribute name="itemTime" attributeType="String" customClassName="."/>
+        <attribute name="itemType" attributeType="String" customClassName="."/>
+    </entity>
+    <elements>
+        <element name="ShowActivity" positionX="-63" positionY="-18" width="128" height="74"/>
+    </elements>
+</model>
