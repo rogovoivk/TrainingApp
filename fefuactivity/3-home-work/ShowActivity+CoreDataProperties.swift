@@ -12,8 +12,8 @@ import CoreData
 
 extension ShowActivity {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<ShowActivity> {
-        return NSFetchRequest<ShowActivity>(entityName: "Activities")
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Activities> {
+        return NSFetchRequest<Activities>(entityName: "Activities")
     }
 
     @NSManaged public var itemDistance: String?
@@ -25,3 +25,5 @@ extension ShowActivity {
 extension ShowActivity : Identifiable {
 
 }
+
+

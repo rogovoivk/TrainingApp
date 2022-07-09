@@ -15,11 +15,18 @@
 		1DE4E5D1270A5CD0004A30CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE4E5CF270A5CD0004A30CA /* LaunchScreen.storyboard */; };
 		E6675FB7282600F0006B991E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6675FB6282600F0006B991E /* RegistrationViewController.swift */; };
 		E6679DA9283770E600B8FA34 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6679DA8283770E600B8FA34 /* LogInViewController.swift */; };
+		E67075052877C3B40061F38F /* CDActivity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67075032877C3B40061F38F /* CDActivity+CoreDataClass.swift */; };
+		E67075062877C3B40061F38F /* CDActivity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67075042877C3B40061F38F /* CDActivity+CoreDataProperties.swift */; };
+		E678F1AA286B7DB50028325A /* DataStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E678F1A9286B7DB50028325A /* DataStoreManager.swift */; };
 		E679958228633C6E00BE540A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E679958028633C6E00BE540A /* Model.xcdatamodeld */; };
 		E67A9A582864F2D3006D6D50 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67A9A572864F2D3006D6D50 /* MapViewController.swift */; };
 		E67ABF512840B15A003AE784 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67ABF502840B15A003AE784 /* MenuViewController.swift */; };
 		E67ABF53284194A3003AE784 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67ABF52284194A3003AE784 /* ActivityViewController.swift */; };
 		E67ABF5728422AAE003AE784 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67ABF5628422AAE003AE784 /* CustomTableViewCell.swift */; };
+		E687C57428652085004B7ECB /* StartActivityBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E687C57328652085004B7ECB /* StartActivityBottomView.xib */; };
+		E687C576286585A7004B7ECB /* StartActivityBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687C575286585A7004B7ECB /* StartActivityBottomView.swift */; };
+		E6E1FF9A2866B175004831BB /* AfterStartActivityBottom.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E1FF992866B175004831BB /* AfterStartActivityBottom.xib */; };
+		E6E1FF9C2868023E004831BB /* AfterStartActivityBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E1FF9B2868023E004831BB /* AfterStartActivityBottom.swift */; };
 		E6FD887428449D79000FD1A2 /* ShowActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD887328449D79000FD1A2 /* ShowActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,11 +41,18 @@
 		1DE4E5D2270A5CD0004A30CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6675FB6282600F0006B991E /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		E6679DA8283770E600B8FA34 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		E67075032877C3B40061F38F /* CDActivity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CDActivity+CoreDataClass.swift"; path = "../../CDActivity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E67075042877C3B40061F38F /* CDActivity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CDActivity+CoreDataProperties.swift"; path = "../../CDActivity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E678F1A9286B7DB50028325A /* DataStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreManager.swift; sourceTree = "<group>"; };
 		E679958128633C6E00BE540A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E67A9A572864F2D3006D6D50 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E67ABF502840B15A003AE784 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		E67ABF52284194A3003AE784 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		E67ABF5628422AAE003AE784 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		E687C57328652085004B7ECB /* StartActivityBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartActivityBottomView.xib; sourceTree = "<group>"; };
+		E687C575286585A7004B7ECB /* StartActivityBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartActivityBottomView.swift; path = "fefuactivity/4-home-work/StartActivityBottomView.swift"; sourceTree = SOURCE_ROOT; };
+		E6E1FF992866B175004831BB /* AfterStartActivityBottom.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AfterStartActivityBottom.xib; sourceTree = "<group>"; };
+		E6E1FF9B2868023E004831BB /* AfterStartActivityBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterStartActivityBottom.swift; sourceTree = "<group>"; };
 		E6FD887328449D79000FD1A2 /* ShowActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowActivityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,20 +86,14 @@
 		1DE4E5C3270A5CCE004A30CA /* fefuactivity */ = {
 			isa = PBXGroup;
 			children = (
-				E67A9A4C2864AF45006D6D50 /* Models */,
-				E678F7E0284A07D3001A2AAB /* SignInView */,
+				E687C57128652006004B7ECB /* 1-home-work */,
+				E687C57028651FE3004B7ECB /* 2-home-work */,
+				E67A9A4C2864AF45006D6D50 /* 3-home-work */,
+				E687C57228652030004B7ECB /* 4-home-work */,
 				E67ABF502840B15A003AE784 /* MenuViewController.swift */,
-				E6679DA8283770E600B8FA34 /* LogInViewController.swift */,
-				E679958028633C6E00BE540A /* Model.xcdatamodeld */,
-				E67A9A572864F2D3006D6D50 /* MapViewController.swift */,
 				1DE4E5C4270A5CCE004A30CA /* AppDelegate.swift */,
-				E6675FB6282600F0006B991E /* RegistrationViewController.swift */,
 				1DE4E5C6270A5CCE004A30CA /* SceneDelegate.swift */,
-				1DE4E5C8270A5CCE004A30CA /* ViewController.swift */,
 				1DE4E5CA270A5CCE004A30CA /* Main.storyboard */,
-				E6FD887328449D79000FD1A2 /* ShowActivityViewController.swift */,
-				E67ABF52284194A3003AE784 /* ActivityViewController.swift */,
-				E67ABF5628422AAE003AE784 /* CustomTableViewCell.swift */,
 				1DE4E5CD270A5CD0004A30CA /* Assets.xcassets */,
 				1DE4E5CF270A5CD0004A30CA /* LaunchScreen.storyboard */,
 				1DE4E5D2270A5CD0004A30CA /* Info.plist */,
@@ -93,18 +101,47 @@
 			path = fefuactivity;
 			sourceTree = "<group>";
 		};
-		E678F7E0284A07D3001A2AAB /* SignInView */ = {
+		E67A9A4C2864AF45006D6D50 /* 3-home-work */ = {
 			isa = PBXGroup;
 			children = (
+				E67075032877C3B40061F38F /* CDActivity+CoreDataClass.swift */,
+				E67075042877C3B40061F38F /* CDActivity+CoreDataProperties.swift */,
+				E678F1A9286B7DB50028325A /* DataStoreManager.swift */,
+				E67A9A572864F2D3006D6D50 /* MapViewController.swift */,
+				E679958028633C6E00BE540A /* Model.xcdatamodeld */,
 			);
-			path = SignInView;
+			path = "3-home-work";
 			sourceTree = "<group>";
 		};
-		E67A9A4C2864AF45006D6D50 /* Models */ = {
+		E687C57028651FE3004B7ECB /* 2-home-work */ = {
 			isa = PBXGroup;
 			children = (
+				E67ABF5628422AAE003AE784 /* CustomTableViewCell.swift */,
+				E67ABF52284194A3003AE784 /* ActivityViewController.swift */,
+				E6FD887328449D79000FD1A2 /* ShowActivityViewController.swift */,
 			);
-			path = Models;
+			path = "2-home-work";
+			sourceTree = "<group>";
+		};
+		E687C57128652006004B7ECB /* 1-home-work */ = {
+			isa = PBXGroup;
+			children = (
+				E6675FB6282600F0006B991E /* RegistrationViewController.swift */,
+				E6679DA8283770E600B8FA34 /* LogInViewController.swift */,
+				1DE4E5C8270A5CCE004A30CA /* ViewController.swift */,
+			);
+			path = "1-home-work";
+			sourceTree = "<group>";
+		};
+		E687C57228652030004B7ECB /* 4-home-work */ = {
+			isa = PBXGroup;
+			children = (
+				E687C57328652085004B7ECB /* StartActivityBottomView.xib */,
+				E687C575286585A7004B7ECB /* StartActivityBottomView.swift */,
+				E6E1FF992866B175004831BB /* AfterStartActivityBottom.xib */,
+				E6E1FF9B2868023E004831BB /* AfterStartActivityBottom.swift */,
+			);
+			path = "4-home-work";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +201,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E687C57428652085004B7ECB /* StartActivityBottomView.xib in Resources */,
 				1DE4E5D1270A5CD0004A30CA /* LaunchScreen.storyboard in Resources */,
 				1DE4E5CE270A5CD0004A30CA /* Assets.xcassets in Resources */,
 				1DE4E5CC270A5CCE004A30CA /* Main.storyboard in Resources */,
+				E6E1FF9A2866B175004831BB /* AfterStartActivityBottom.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,15 +216,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E687C576286585A7004B7ECB /* StartActivityBottomView.swift in Sources */,
 				E67A9A582864F2D3006D6D50 /* MapViewController.swift in Sources */,
+				E678F1AA286B7DB50028325A /* DataStoreManager.swift in Sources */,
 				1DE4E5C9270A5CCE004A30CA /* ViewController.swift in Sources */,
+				E67075062877C3B40061F38F /* CDActivity+CoreDataProperties.swift in Sources */,
 				E67ABF512840B15A003AE784 /* MenuViewController.swift in Sources */,
 				E67ABF5728422AAE003AE784 /* CustomTableViewCell.swift in Sources */,
 				1DE4E5C5270A5CCE004A30CA /* AppDelegate.swift in Sources */,
 				E6675FB7282600F0006B991E /* RegistrationViewController.swift in Sources */,
 				E6FD887428449D79000FD1A2 /* ShowActivityViewController.swift in Sources */,
+				E67075052877C3B40061F38F /* CDActivity+CoreDataClass.swift in Sources */,
 				E67ABF53284194A3003AE784 /* ActivityViewController.swift in Sources */,
 				E679958228633C6E00BE540A /* Model.xcdatamodeld in Sources */,
+				E6E1FF9C2868023E004831BB /* AfterStartActivityBottom.swift in Sources */,
 				E6679DA9283770E600B8FA34 /* LogInViewController.swift in Sources */,
 				1DE4E5C7270A5CCE004A30CA /* SceneDelegate.swift in Sources */,
 			);

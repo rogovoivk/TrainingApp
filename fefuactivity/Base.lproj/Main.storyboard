@@ -268,7 +268,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Велосипед" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMK-AI-yMu">
-                                <rect key="frame" x="51" y="208.5" width="78.5" height="18"/>
+                                <rect key="frame" x="60" y="208.5" width="78.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -279,6 +279,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="pSA-0N-EXt">
+                                <rect key="frame" x="33" y="208.5" width="22" height="22"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22" id="l5s-cm-0ng"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="lDm-5r-c1l"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mqx-ou-j7M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -287,14 +295,17 @@
                             <constraint firstItem="Gew-XP-S3H" firstAttribute="top" secondItem="Mqx-ou-j7M" secondAttribute="top" constant="32" id="2Jq-xC-Blf"/>
                             <constraint firstItem="LfV-8V-CPT" firstAttribute="top" secondItem="jxi-m0-bRp" secondAttribute="bottom" constant="16" id="2Uu-3t-IeC"/>
                             <constraint firstItem="Mqx-ou-j7M" firstAttribute="trailing" secondItem="Gew-XP-S3H" secondAttribute="trailing" constant="33" id="6Ck-Tr-ZSP"/>
+                            <constraint firstItem="pSA-0N-EXt" firstAttribute="leading" secondItem="Mqx-ou-j7M" secondAttribute="leading" constant="33" id="7vC-Bz-Hsf"/>
                             <constraint firstItem="ZpB-aI-ZBu" firstAttribute="leading" secondItem="Mqx-ou-j7M" secondAttribute="leading" constant="32" id="8I7-yR-umk"/>
                             <constraint firstItem="Mqx-ou-j7M" firstAttribute="trailing" secondItem="o9E-VZ-Q3C" secondAttribute="trailing" constant="33" id="92D-QJ-gpS"/>
                             <constraint firstItem="jxi-m0-bRp" firstAttribute="top" secondItem="Gew-XP-S3H" secondAttribute="bottom" constant="1" id="9ew-oE-dcV"/>
                             <constraint firstItem="jxi-m0-bRp" firstAttribute="leading" secondItem="Mqx-ou-j7M" secondAttribute="leading" constant="32" id="9tI-7M-qoh"/>
+                            <constraint firstItem="pSA-0N-EXt" firstAttribute="top" secondItem="o9E-VZ-Q3C" secondAttribute="bottom" constant="24" id="D2M-fU-jNy"/>
+                            <constraint firstItem="MMK-AI-yMu" firstAttribute="leading" secondItem="pSA-0N-EXt" secondAttribute="trailing" constant="5" id="IKw-E3-Ula"/>
                             <constraint firstItem="Mqx-ou-j7M" firstAttribute="trailing" secondItem="jxi-m0-bRp" secondAttribute="trailing" constant="203" id="IOG-5C-Usc"/>
                             <constraint firstItem="o9E-VZ-Q3C" firstAttribute="leading" secondItem="Mqx-ou-j7M" secondAttribute="leading" constant="33" id="IfA-P3-wHX"/>
+                            <constraint firstItem="pSA-0N-EXt" firstAttribute="leading" secondItem="Mqx-ou-j7M" secondAttribute="leading" constant="33" id="PCg-iw-zzR"/>
                             <constraint firstItem="MMK-AI-yMu" firstAttribute="top" secondItem="o9E-VZ-Q3C" secondAttribute="bottom" constant="24" id="Rax-fD-veb"/>
-                            <constraint firstItem="MMK-AI-yMu" firstAttribute="leading" secondItem="Mqx-ou-j7M" secondAttribute="leading" constant="51" id="TUX-WE-Y2N"/>
                             <constraint firstItem="o9E-VZ-Q3C" firstAttribute="top" secondItem="LfV-8V-CPT" secondAttribute="bottom" constant="1" id="Wm8-0J-YCZ"/>
                             <constraint firstItem="Gew-XP-S3H" firstAttribute="leading" secondItem="Mqx-ou-j7M" secondAttribute="leading" constant="33" id="adT-hi-nOY"/>
                             <constraint firstItem="Mqx-ou-j7M" firstAttribute="trailing" secondItem="LfV-8V-CPT" secondAttribute="trailing" constant="33" id="l7i-ON-mOL"/>
@@ -305,12 +316,18 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="firstLabel" destination="Gew-XP-S3H" id="i7e-sd-oww"/>
+                        <outlet property="bykeIco" destination="pSA-0N-EXt" id="nLS-IV-ChX"/>
+                        <outlet property="distanceLabel" destination="Gew-XP-S3H" id="hww-ZS-acd"/>
+                        <outlet property="startFinishLabel" destination="o9E-VZ-Q3C" id="Wix-ok-VdU"/>
+                        <outlet property="timeLabel" destination="LfV-8V-CPT" id="MEq-7z-4Ni"/>
+                        <outlet property="typeLabel" destination="MMK-AI-yMu" id="dhV-Wd-3bk"/>
+                        <outlet property="whenLabel" destination="rec-ks-hqW" id="K2U-SD-njj"/>
+                        <outlet property="whenLabel2" destination="jxi-m0-bRp" id="hSy-Vr-F28"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctq-Xm-IWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6196" y="695"/>
+            <point key="canvasLocation" x="6195.652173913044" y="694.41964285714278"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UHb-JE-NL6">
@@ -329,11 +346,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Icon" width="11.5" height="7"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

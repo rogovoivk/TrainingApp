@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G415" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Activities" representedClassName="Activities" syncable="YES">
+        <attribute name="itemDistance" attributeType="String"/>
+        <attribute name="itemTime" attributeType="String"/>
+        <attribute name="itemType" attributeType="String"/>
+    </entity>
+    <entity name="CDActivity" representedClassName="CDActivity" syncable="YES">
+        <attribute name="itemDateFinish" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="itemDateStart" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="itemDistance" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="itemTime" attributeType="String"/>
+        <attribute name="itemType" attributeType="String"/>
+    </entity>
+    <entity name="MyActivities" representedClassName="MyActivities" syncable="YES" codeGenerationType="class">
+        <attribute name="itemDistance" optional="YES" attributeType="String"/>
+        <attribute name="itemTime" optional="YES" attributeType="String"/>
+        <attribute name="itemType" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Activities" positionX="-54" positionY="45" width="128" height="74"/>
+        <element name="CDActivity" positionX="-54" positionY="54" width="128" height="104"/>
+        <element name="MyActivities" positionX="-63" positionY="9" width="128" height="74"/>
+    </elements>
+</model>
